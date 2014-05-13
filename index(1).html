@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]><html class="ie8-"><![endif]-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Corporate Security Huberegeg</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="img/dt_logo.ico">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/dt_csh.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen" />
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$("body").on("click", "a.drop", function(event) {
+					event.preventDefault();
+					console.log(event);
+					$(".dropdown_2columns").toggle();
+				});
+			});
+		</script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container" id="menu-level1">
+			<div class="navbar redbox">
+				<a class="navbar-brand"><img src="img/dt_logo.png"/></a>
+				<span class="pull-right color-primary tagline"> <b data-localize="tagline">LIFE IS FOR SHARING</b>
+					<br />
+					<span class="homeLang"> <img src="img/ic-deutsch.gif"/><a class="custom germancontent font-size-s">Deutsch</a> | <a class="custom selectedLang font-size-s englishcontent">English</a><img src="img/ic-english.gif"/> </span> </span>
+			</div>
+			<!--<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+			</div>
+			Admin menu start-->
+			<!--Home page menu start-->
+			<!-- <ul class="nav navbar-nav topmenu space-top-pad-fac2" id="home-menu">
+			<span class="color-light-grey font-size-xl mouse-pointer cshhead" data-localize="accounts.menuitem1">Corporate Security Hub</span>
+			</ul>
+			<!--Home page menu end-->
+			<!--Each account page menu start-->
+			<ul class="nav navbar-nav hide topmenu space-top-pad-fac2" id="manageaccount-menu">
+				<span class="color-light-grey font-size-xl space-top-pad mouse-pointer cshhead" data-localize="accounts.menuitem1">Corporate Security Hub</span>
+			</ul>
+			<!--Each account page menu end-->
+
+			<!--Admin menu end-->
+
+			<!--</nav>-->
+		</div>
+		<div class="container hide" id="menu-level2">
+			<div class="navbar">
+				<a class="navbar-brand"><img src="img/dt_logo.png"/></a>
+				<span class="pull-right color-primary tagline"> <b data-localize="tagline">LIFE IS FOR SHARING</b>
+					<br />
+					<span class="homeLang"> <img src="img/ic-deutsch.gif"/><a class="custom germancontent font-size-s">Deutsch</a> | <a class="custom selectedLang font-size-s englishcontent">English</a><img src="img/ic-english.gif"/> </span> </span>
+			</div>
+			<div class="row space-zero">
+				<div class="col-md-9 space-zero">
+					<ul class="nav nav-tabs pull-left">
+						<li class="selectedMenuItem" id="users">
+							<a> <span data-localize="manageaccounts.users.title1">Users</span> </a>
+						</li>
+						<li id="devices">
+							<a> <span data-localize="manageaccounts.devices.title">Devices</span> </a>
+						</li>
+						<li id="gateway">
+							<a> <span data-localize="manageaccounts.gateways.title">Devices</span> </a>
+						</li>
+						<li id="groups">
+							<a> <span data-localize="manageaccounts.groups.title">Groups</span> </a>
+						</li>
+						<li id="policy">
+							<a> <span data-localize="manageaccounts.policy.title">Policies</span> </a>
+						</li>
+						<li id="account-settings">
+							<a> <span data-localize="manageaccounts.settings.title">Settings</span> </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 space-zero">
+					<span class="pull-right logout logname hide"> <span class="loggedinuser overflow-login color-blue"></span> <span class="disp-block color-grey">&nbsp;|&nbsp;</span> <span data-localize="logout" class="logoutlink disp-block">Log Out</span> <span class="disp-block">&nbsp;<img src="img/logout.png" /></span> </span>
+				</div>
+			</div>
+		</div>
+		<div class="container content-unit-login">
+			<br />
+			<div class="login-form">
+				<span class="logo-img"><img src="img/img-logo.png"/></span>
+				<div class="font-size-xl color-light-grey" data-localize="login.heading">
+					CORPORATE SECURITY HUB
+				</div>
+				<div data-localize="login.subheading" class="font-size-l login-sub-heading">
+					Admin portal
+				</div>
+				<div class="input-div">
+					<input type="text" class="mandatory emailcheck" id="email" name="email" value="" placeholder="Email" tabindex="1">
+					<span class="hide"> <span class="error error-msg" data-localize="login.username.error"> This cannot be left blank. </span> </span>
+				</div>
+				<div class="input-div">
+					<input type="password" class="mandatory" id="password" name="password" value="" placeholder="Password" tabindex="2">
+					<span class="zero-space hide"> <span class="error error-msg" data-localize="login.password.error"> This cannot be left blank. </span> </span>
+				</div>
+				<a class="color-primary pull-right space-right-mar-facx no-underline forgotpwd" data-localize="login.forgotpwd" tabindex="3"> Forgot password? </a>
+				<br class="clearfloat" />
+				<br />
+				<a class="btn-action signin pull-right space-right-mar-facx" data-localize="login.signin" tabindex="4">Login</a>
+			</div>
+		</div>
+		<div class="container errorFeedback hide">
+			<div class="error-block-critical">
+				<div class="status">
+					<div><img src="img/icon-error.png" />
+					</div>
+					<div>
+						<span class="status-title color-error" data-localize="status.error">Error Notification</span>
+						<br />
+						<textarea class="status-body color-black status-textarea-large" id="error-msg" rows="5"></textarea>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="container content-holder hide page-border">
+			<div class="clearfloat row space-zero content-main-page">
+				<!--Main content area-->
+				<div class="col-md-12 content-unit space-zero"></div>
+			</div>
+		</div>
+		<br>
+		<footer>
+			<div class="row">
+				<div class="col-xs-6 col-sm-3">
+					<div class="color-light-grey font-size-l" data-localize="anyquestions">
+						ANY QUESTIONS
+					</div>
+					<div class="font-size-s" data-localize="contactyour"></div>
+					<a href="http://www.telekom.de" class="font-size-s underline color-a-reg" target="_blank" data-localize="telekomlink" ></a>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="color-light-grey font-size-l" data-localize="contactfooter"></div>
+					<div class="font-size-s">
+						Freecall: (0) 0800 422 445 33
+					</div>
+					<div class="font-size-s">
+						Email:&nbsp;<a href="mailto:ems-sales@telekom.de?subject=sub:" class="font-size-s underline color-a-reg">ems-sales@telekom.de </a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="color-light-grey font-size-l" data-localize="publisherhead"></div>
+					<div class="font-size-s" data-localize="publisher"></div>
+					<div class="font-size-s" data-localize="enterprise"></div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="color-light-grey font-size-l mouse-pointer cshhead footer-logo-txt" data-localize="accounts.menuitem1">
+						Corporate Security Hub
+					</div>
+					<span class="pull-right"><img src="img/img-footer-logo.gif"/></span>
+				</div>
+			</div>
+			<div class="row sub-menu-footer">
+				<ul>
+					<li >
+						<a id="disclaimer" class="font-size-s underline color-a-reg" data-localize="disclaimer" target="_blank"></a>&nbsp;<span>|</span>
+					</li>
+					<li>
+						<a id="imprint" class="font-size-s underline color-a-reg" data-localize="imprint" target="_blank"></a>&nbsp;<span>|</span>
+					</li>
+					<li>
+						<a id="dataprivacy" class="font-size-s underline color-a-reg" data-localize="dataprivacy" target="_blank">&nbsp;</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script id="selectListTemplate" type="text/template">
+			<%= name %>
+		</script>
+
+		<!--Common notification texts-->
+		<div class="hide">
+			<div class="error-block" id="errorStatus">
+				<div class="status">
+					<div><img src="img/icon-error.png" />
+					</div>
+					<div>
+						<span class="status-title color-error" data-localize="status.error">Error Notification</span>
+						<br />
+						<textarea class="status-body color-black status-textarea" readonly></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="success-block" id="successStatus">
+				<div class="status">
+					<div><img src="img/icon-success.png" />
+					</div>
+					<div>
+						<span class="status-title color-success" data-localize="status.success">Success Notification</span>
+						<br />
+						<textarea class="status-body color-black status-textarea" readonly></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="wait-block">
+				<div class="status">
+					<div><img src="img/icon-wait.gif" />
+					</div>
+					<div>
+						<span class="status-title color-wait" data-localize="status.wait">Status Notification</span>
+						<br />
+						<textarea class="status-body color-black status-textarea" readonly></textarea>
+					</div>
+				</div>
+			</div>
+
+			<div class="status-block">
+				<div class="status">
+
+					<div>
+						<span class="status-title color-wait" data-localize="status.wait">Status Notification</span>
+						<br />
+						<textarea class="status-body color-black status-textarea" readonly></textarea>
+					</div>
+				</div>
+			</div>
+
+			<div class="forgot-block">
+				<a type="button" class="close space-right-pad">×</a>
+				<div class="status">
+					<div><img src="img/icon-forgot.png" />
+					</div>
+					<div>
+						<span class="status-title color-forgot" data-localize="forgotpwd.pswdsuccess1">REQUEST ACCEPTED!</span>
+						<br />
+						<br />
+						<div class="status-body color-black status-textarea-forgot"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="msgSessionModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-head">
+						<h3 id="msgyModalLabel">Feedback</h3>
+
+					</div>
+					<hr />
+					<div class="msg-modal-body">
+						<p class="spacer pop-content"></p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn session hide" data-dismiss="modal" aria-hidden="true">
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Common templates start-->
+		<!--Account Dropdown-->
+		<script id="tmpl_account_dd" type="text/template">
+
+			<ul id="menu">
+
+			<li class="parentDrop">
+			<a href="javascript:void(0)" class="drop">Telekom Deuchland</a>
+			<img src="img/ic-deutsch.gif"><span class="first">20</span>
+			<img src="img/ic-deutsch.gif"><span class="first">30</span>
+
+			<div class="dropdown_2columns">
+			<!-- Begin 2 columns container -->
+			<ul class="expanded-list">
+			<% var len=accountDDRef.length;
+			for(var i=0; i<len; i++){ %>
+			<li>
+			<div class="col_1" data-value="<%= [i] %>">
+			<div class="cyan-heading">
+			<%= accountDDRef[i].name %>
+
+			<p class="color-grey"><img src="img/ic-deutsch.gif"><%= accountDDRef[i].userCount %>
+			<img src="img/ic-deutsch.gif"><%= accountDDRef[i].deviceCount %></p>
+			</div>
+			</div>
+			</li>
+			<%  } %>
+			</div>
+
+			</ul>
+			</div><!-- End 2 columns container -->
+
+			</li><!-- End Home Item -->
+
+			</ul>
+
+		</script>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.localize.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/jquery.qtip-1.0.0-rc3.min.js"></script>
+		<script src="js/underscore.js"></script>
+		<script src="js/backbone-min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jstorage.js"></script>
+		<script src="js/backbone.syphon.js"></script>
+		<script src="js/backbone.memento.min.js"></script>
+		<script src="js/jquery.simplePagination.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/view.js"></script>
+		<script src="js/csh.js"></script>
+		<script src="js/ubuntu.js"></script>
+	</body>
+</html>
